@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+        font-family: sans-serif;
+    }
+
+    body{
+        width: 100%;
+        background-color: rgb(152, 145, 145);
+        color: rgb(34, 31, 31);
+    }
+    .container{
+        width: 50%;
+        margin: 100px auto;
+    }
+    table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table tr>*{
+        padding:5px;
+        text-align: center;
+    }
+
+    th{
+        text-transform:uppercase;
+    }
+
+    select{
+        width: 50%;
+        padding:10px;
+        margin-bottom: 50px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    button{
+        width: 40%;
+        padding:10px 20px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .heading th{
+        padding:20px 0px;
+        background-color: rgb(153, 92, 153);
+    }
+</style>
+<body>
+    <div class="container">
+        
+        <select name="weather" id="weather">
+            <option value="---" selected>--choose option--</option>
+            <option value="bangalore">Bangalore</option>
+            <option value="paris">paris</option>
+            <option value="chicago">chicago</option>
+            <option value="lhasa">lhasa</option>
+            <option value="shigatse">shigatse</option>
+            <option value="bylakuppe">bylakuppe</option>
+            <option value="mundgod">mundgod</option>
+            <option value="mcleod">mcleod</option>
+            <option value="bidadi">bidadi</option>
+        </select>
+        <button onclick="showWeather()">Weather</button>
+
+        <div id="table">
+
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
